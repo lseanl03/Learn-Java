@@ -1,5 +1,5 @@
 import java.util.Scanner;
-public class PTBac2 {
+public class Slide34 {
     public static void main(String[] args) throws Exception {
         Scanner sc=new Scanner(System.in);
         double a,b,c=0;

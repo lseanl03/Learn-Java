@@ -1,5 +1,5 @@
 import java.util.Scanner;
-class TongDaySo {
+class Slide30 {
     public static int sum(int n){
         int tong=0;
         while(n>0)
