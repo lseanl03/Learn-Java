@@ -9,9 +9,6 @@ public class Slide47 {
         while(total<=100){   
             n=scanner.nextInt();   
             total+=n;
-            if(total>100)
-            break;
-            System.out.print(total + " + ");
         }
         System.out.print("Tong cac so vua nhap la:"+ total);
 
