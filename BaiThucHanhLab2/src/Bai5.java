@@ -5,15 +5,27 @@ nếu tổng lớn hơn > 100 thì kết thúc vòng lặp và hiển thị thô
  */
 public class Bai5 {
     public static void main(String[] args) {
-        Scanner scanner=new Scanner(System.in);      
-        int n;
-        int total=0;
-        System.out.println("Nhap cac so de tong >100:");
-        do{  
-            n=scanner.nextInt();   
-            total+=n;
-        }while(total<100);
-        System.out.printf("Tong cac so vua nhap la: %d",total);
-
+        Scanner scanner = new Scanner(System.in);
+        int number,sum=0;
+        boolean number1=true;
+        System.out.println("Nhap vao cac so de tong >100: ");
+        while(sum<100){
+            number=scanner.nextInt();
+            sum+=number;    
+            if(sum<=100){
+                if(number1){
+                    System.out.print(number);
+                    number1=false;
+                }   
+                else{
+                    System.out.print(" + "+number+" + ");
+                }
+            }
+            else{
+                System.out.print(" + "+number);
+            } 
+        }
+        System.out.println(" = "+sum);
     }
 }
+
